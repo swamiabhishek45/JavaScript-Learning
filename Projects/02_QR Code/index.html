@@ -15,13 +15,13 @@
                 <p>Paste text to create QR Code</p>
             </section>
 
-            <form>
-                <input type="text" name="qrtext" placeholder="Enter text">
-                <button type="submit">Generate QR Code</button>
+            <form id="qrForm">
+                <input id="qrInputText" type="text" name="qrText" placeholder="Enter text">
+                <button id="generate-btn" type="submit">Generate QR Code</button>
             </form>
 
-            <section class="qr_container">
-                <img src="./qr.webp" alt="QR Code">
+            <section id="qrContainer" class="qr_container">
+                <img id="qrImage" src="./qr.webp" alt="QR Code">
             </section>
         </div>
     </div>
