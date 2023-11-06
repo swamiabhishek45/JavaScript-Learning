@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        button {
+            background: skyblue;
+            border: 1px solid black;
+        }
+        button:hover {
+            background: tomato;
+        }
+        button:active{
+            background: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sasta Calculator</h1>
+    <input type="number" name="first" id="first" step="any">
+    <select id="ope">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input type="number" name="second" id="second" step="any">
+    <br>
+    <br>
+    <button onclick="cal()">Calculate</button>
+    <input type="text" name="name" id="res" readonly="">
+    <script src="index.js"></script>
+</body>
+
+</html>
